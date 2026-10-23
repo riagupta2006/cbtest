@@ -517,4 +517,57 @@
   }
 </script></main></div>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll("aside nav a");
+    const mainContainer = document.querySelector("main");
+
+    const pageMap = {
+      "live-density-and-flow-ai": "index.html",
+      "venue-layout-and-poi-gis": "5.html",
+      "medical-and-rapid-dispatch": "3.html",
+      "ai-facial-recognition-and-lost-persons": "1.html",
+      "event-analytics-and-route-overrides": "4.html",
+      "route-analytics-and-overrides": "4.html"
+    };
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const dataPath = link.getAttribute("data-path");
+        const targetFile = pageMap[dataPath] || link.getAttribute("href");
+
+        if (targetFile && targetFile !== "#") {
+          try {
+            const response = await fetch(targetFile);
+            const htmlText = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlText, "text/html");
+            const newContent = doc.querySelector("main")?.innerHTML;
+
+            if (newContent) {
+              mainContainer.innerHTML = newContent;
+              
+              // Re-execute scripts embedded in loaded view
+              doc.querySelectorAll("main script").forEach(oldScript => {
+                const newScript = document.createElement("script");
+                newScript.textContent = oldScript.textContent;
+                document.body.appendChild(newScript);
+              });
+
+              // Highlight active link
+              navLinks.forEach(l => l.classList.remove("bg-primary-container", "text-on-primary-container", "font-bold"));
+              link.classList.add("bg-primary-container", "text-on-primary-container", "font-bold");
+            }
+          } catch (err) {
+            console.error("Failed to load view:", err);
+          }
+        }
+      });
+    });
+  });
+</script>        
+
+        
 </body></html>
