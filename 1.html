@@ -1,0 +1,466 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#ffcdcf","on-primary-fixed-variant":"#004f54","on-secondary-container":"#00311f","on-primary-container":"#006970","outline-variant":"#3b494b","surface-container":"#171f33","on-secondary-fixed-variant":"#005236","surface-bright":"#31394d","surface-container-lowest":"#060e20","outline":"#849495","on-surface-variant":"#b9cacb","tertiary":"#fff3f2","on-surface":"#dae2fd","on-secondary":"#003824","primary-fixed":"#7df4ff","secondary-fixed":"#6ffbbe","tertiary-fixed-dim":"#ffb2b7","on-error":"#690005","on-secondary-fixed":"#002113","on-tertiary":"#67001b","inverse-on-surface":"#283044","on-tertiary-fixed-variant":"#92002a","surface-tint":"#00dbe9","on-error-container":"#ffdad6","tertiary-fixed":"#ffdadb","on-primary-fixed":"#002022","surface-variant":"#2d3449","secondary-container":"#00a572","surface-dim":"#0b1326","primary-container":"#00f0ff","on-tertiary-container":"#bc0b3b","surface-container-highest":"#2d3449","on-primary":"#00363a","error":"#ffb4ab","primary":"#dbfcff","surface-container-high":"#222a3d","secondary-fixed-dim":"#4edea3","error-container":"#93000a","on-tertiary-fixed":"#40000d","inverse-surface":"#dae2fd","secondary":"#4edea3","surface-container-low":"#131b2e","primary-fixed-dim":"#00dbe9","inverse-primary":"#006970","surface":"#0b1326","background":"#0b1326","on-background":"#dae2fd"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1rem","margin":"0.75rem","space-sm":"0.375rem","space-md":"0.75rem","space-xl":"1.5rem","gutter":"0.75rem","gutter-desktop":"1rem","space-xs":"0.25rem","margin-desktop":"1.25rem"},fontFamily:{"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-sm":["JetBrains Mono"],"body-sm":["Inter"],"headline-md":["Inter"],"label-md":["JetBrains Mono"],"headline-xl":["Inter"],"label-lg":["JetBrains Mono"],"body-md":["Inter"],"headline-xl-mobile":["Inter"],"body-lg":["Inter"],"telemetry-metric":["JetBrains Mono"],"telemetry-metric-sm":["JetBrains Mono"]},fontSize:{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"telemetry-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"700"}],"telemetry-metric-sm":["18px",{"lineHeight":"22px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.6)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg min-w-max"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container shadow-[0_0_10px_rgba(0,240,255,0.3)]"><span class="material-symbols-outlined text-[20px]">radar</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight uppercase text-primary">NYXA COMMAND CONTROL</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Event Ops Tactical Network</span></div></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-lg"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">event</span><select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-space-sm"><option class="bg-surface-container text-on-surface" value="kumbh-2025">Maha Kumbh 2025 - Sector 4 &amp; Central Ghats | Live Event: 248,500 Attendees</option><option class="bg-surface-container text-on-surface" value="stadium-alpha">Mega Arena World Tour - Main Bowl | Live Event: 82,400 Attendees</option><option class="bg-surface-container text-on-surface" value="sol-festival">Solstice Open Air MegaFest - Zone Red | Live Event: 115,000 Attendees</option></select><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><div class="hidden 2xl:flex items-center gap-space-lg bg-surface-container/50 px-space-lg py-space-xs rounded-lg"><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm uppercase text-secondary">AI Vision Feeds: 142/142 Online</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-error text-[14px]">warning</span><span class="font-label-sm text-label-sm uppercase text-error">Threat Alert Level: DEFCON 3 / ELEVATED FLOW</span></div><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">schedule</span><span class="">UTC+05:30 19:42:18</span></div></div><div class="flex items-center gap-space-md min-w-max"><button class="flex items-center gap-space-xs bg-error-container text-on-error-container px-space-md py-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider shadow-[0_0_12px_rgba(244,63,94,0.35)] hover:bg-error hover:text-on-error transition-all" type="button"><span class="material-symbols-outlined text-[16px] animate-pulse text-error">emergency_home</span><span class="">Broadcast Emergency Alert</span></button><div class="flex items-center gap-space-xs"><button aria-label="Toggle Audio Alerts" class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">volume_up</span></button><div class="relative"><button aria-label="Alert Notifications" class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span></button><span class="absolute -top-1 -right-1 px-1 min-w-[16px] h-4 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center justify-center">4</span></div></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface">Officer R. Malhotra</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Sector Lead</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UP74XuQhCfV55R08CNgb4GKLroPwDbmg0AIubVmfhfRMuVfXyOB0Gtx4C7YVQJ3e2-y6FroSW_yq-UZjAFSig_JUsHb4bpaLBg0b-GlEHlPqBL7Dnj0VGh09vA1Tmy3QO-lScMPuHKEBMSSaaEOWkYP6jxJH7yi3zTApC2fE8Iyzu2vBoOxQsL55ZQtTRe8m9-OTEMcLP1uH_y6hh-WcbwC6hxh0lcqvh1sXn0sYpVwYM5PfV7K0FH8RA"></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest/95 backdrop-blur-xl z-40 flex flex-col justify-between py-space-md px-space-sm"><div class="flex flex-col gap-space-md"><div class="px-space-md py-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Tactical Command Units</div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="live-density-and-flow-ai" href="#"><span class="font-body-md text-body-md">Live Density &amp; Flow AI</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="venue-layout-and-poi-gis" href="#"><span class="font-body-md text-body-md">Venue Layout &amp; POI GIS</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="medical-and-rapid-dispatch" href="#"><span class="font-body-md text-body-md">Medical &amp; Rapid Dispatch</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ai-facial-recognition-and-lost-persons" href="#"><span class="font-body-md text-body-md">AI Facial Recognition &amp; Lost Persons</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="event-analytics-and-route-overrides" href="#"><span class="font-body-md text-body-md">Event Analytics &amp; Route Overrides</span></a></nav></div><div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Hub Health</span><span class="font-label-sm text-label-sm text-secondary">99.98%</span></div><div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full w-[99.98%]"></div></div><div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-space-xs"><span class="">Node: ASIA-SOUTH-1</span><span class="">Mesh: ACTIVE</span></div></div></aside><div class="pl-72"><main class="w-full pt-16 bg-surface min-h-screen px-gutter-desktop py-space-md"><div class="flex flex-col w-full">
+<div class="w-full space-y-space-md">
+<!-- Top System Header & Operational Subtitle -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-widest shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+            LIVE BIOMETRIC INTERCEPT
+          </div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">UNIT // REID-NEURAL-VISION-04</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          Search CCTV Video Network &amp; Crowd Flow Feeds via Deep Neural Vision &amp; Attendee Uploaded Photos
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded-lg font-label-md text-label-md uppercase transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">filter_alt</span>
+<span class="">Feed Filters (142 Nodes)</span>
+</button>
+<button class="flex items-center gap-space-xs bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-sm rounded-lg shadow-sm hover:brightness-110 transition-all font-bold" type="button">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span class="">+ Create Incident / Walk-in</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Key Metrics Strip -->
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-xl relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active Missing Cases</span>
+<span class="material-symbols-outlined text-error text-[18px]">person_search</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric text-telemetry-metric text-error font-bold">03</span>
+<span class="font-label-sm text-label-sm text-error">CRITICAL</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-error h-full w-[35%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Found &amp; Reunited Today</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">how_to_reg</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric text-telemetry-metric text-secondary font-bold">18</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">+4 in last 2h</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full w-[85%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active CCTV Nodes</span>
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">videocam</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric text-telemetry-metric text-primary-fixed font-bold">142/142</span>
+<span class="font-label-sm text-label-sm text-secondary">100% ONLINE</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-primary-container h-full w-full"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Faces Ingested / Sec</span>
+<span class="material-symbols-outlined text-primary text-[18px]">speed</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric text-telemetry-metric text-on-surface font-bold">12,450</span>
+<span class="font-label-sm text-label-sm text-outline">FPS: 60hz</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-surface-tint h-full w-[78%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl relative overflow-hidden flex flex-col justify-between col-span-2 md:col-span-1">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Avg Resolution Time</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">timer</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric text-telemetry-metric text-on-surface font-bold">8.4</span>
+<span class="font-label-sm text-label-sm text-outline">MINUTES</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full w-[62%]"></div>
+</div>
+</div>
+</div>
+<!-- Active Investigation Workspace: 3-Column Tactical Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- LEFT SIDEBAR: Case Queue (4 cols on lg, 3.5 on xl) -->
+<div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface">Queue</span>
+<span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">3 ACTIVE</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">PRIORITY SORT</span>
+</div>
+<!-- Case Card 1 (HIGH CONFIDENCE MATCH ALERT) -->
+<div class="bg-surface-container-high rounded-xl p-space-md relative overflow-hidden shadow-xl transition-all cursor-pointer ring-1 ring-primary-container/30">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<span class="font-label-md text-label-md text-primary-container uppercase font-bold tracking-wider">CASE #MP-104</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold animate-pulse">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+              94.8% MATCH
+            </span>
+</div>
+<div class="flex gap-space-sm mt-space-xs">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="High contrast passport headshot of a 7-year-old South Asian boy smiling wearing a bright canary yellow shirt, neutral studio lighting, authentic real photo, ultra-sharp detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAtFa2bKn3jVU6ZjcZQpoyo5xNVIRDW2XWd3AQKbKLCt_tFesT5hNKRIEKQ074QKX6Osw3Um7NmAywG_L24lmYQp-NqhrcjI9-iPzbOoL6JKE7PhB3k1fx6aXbUpLGCwN5rxNLIuv7376QkSv4hd9S4W6vvlTFdfrCs1L3IK2Odg4ibxI5tkfHMKesUpNaszNrU7xbVtiJ3AYpxGw9HXS3XRTRcLDmnSXpapm4_SGBV4HMSqlZ7Tt_">
+<span class="absolute bottom-0 right-0 bg-primary text-on-primary text-[8px] font-label-sm px-1">REF</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Aarav Sharma</span>
+<span class="font-label-sm text-label-sm text-outline">(Age 7)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Reporter: Mother (Anita S.) via App</span>
+<span class="font-label-sm text-label-sm text-outline">Filed: 14:15:02 (17m ago)</span>
+</div>
+</div>
+<div class="mt-space-sm p-space-xs bg-surface-container rounded-lg space-y-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Worn Attire:</span>
+<span class="text-on-surface font-medium truncate">Yellow cartoon tee, blue shorts</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-primary-container">
+<span class="">Status:</span>
+<span class="font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                MATCH DETECTED - CAM 072
+              </span>
+</div>
+</div>
+</div>
+<!-- Case Card 2 (SCANNING) -->
+<div class="bg-surface-container-low rounded-xl p-space-md relative overflow-hidden transition-all hover:bg-surface-container opacity-85 hover:opacity-100 cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-outline-variant"></div>
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<span class="font-label-md text-label-md text-outline uppercase font-bold tracking-wider">CASE #MP-105</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] animate-spin">sync</span>
+              SCANNING
+            </span>
+</div>
+<div class="flex gap-space-sm mt-space-xs">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Portrait photograph of an elderly Indian grandmother in her late 60s wearing a traditional bright pink cotton saree with silver hair tied back, natural lighting, documentary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk1NsiGHy69CY_J0Zug0mLSIm_djxOs6EHhd_LwW0prdpjHlzWcml4h3QCdqaBh6F67fD1-lIMRfeJQwY8zldvJNzuR-8vf_145nLKY0Iuw8w2emLE8poN0VwQZHk_o6Kg_bgfyUY2tBuBI6gmN_H6oTNKASdIB23CS-ipt00cu1lrlE_KXWCERFMGwNztxV7SBrub_-ALhOSSaDLrzOocRXgzrsVC6CssVtJISoz95feouAMfZQ1h">
+<span class="absolute bottom-0 right-0 bg-surface-bright text-on-surface text-[8px] font-label-sm px-1">REF</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Sunita Devi</span>
+<span class="font-label-sm text-label-sm text-outline">(Age 68)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Elderly pilgrim - Sector 4 Ghats</span>
+<span class="font-label-sm text-label-sm text-outline">Filed: 13:48:20 (44m ago)</span>
+</div>
+</div>
+<div class="mt-space-sm p-space-xs bg-surface-container-high rounded-lg space-y-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Worn Attire:</span>
+<span class="text-on-surface truncate">Bright pink saree, floral shawl</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Search Grid:</span>
+<span class="font-bold text-outline">Sectors 3, 4, 7 (48 cameras)</span>
+</div>
+</div>
+</div>
+<!-- Case Card 3 (SCANNING) -->
+<div class="bg-surface-container-low rounded-xl p-space-md relative overflow-hidden transition-all hover:bg-surface-container opacity-85 hover:opacity-100 cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-outline-variant"></div>
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<span class="font-label-md text-label-md text-outline uppercase font-bold tracking-wider">CASE #MP-106</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] animate-spin">sync</span>
+              SCANNING
+            </span>
+</div>
+<div class="flex gap-space-sm mt-space-xs">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of a 12 year old boy with short black hair wearing a dark oversized sports hooded sweatshirt, candid smartphone selfie quality, daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEc3unxY2gtKZnLvAo6G8P-qqc-wgDIHuX1nlBukyas3m2CVlz3SNAuuxoOkZ3RiTYOD3ST6WEZBNMQAZhXEUmqEIe7ZM1o6OragnCqENHws3kJ_v1z0_Fhm_EkZ9g_alYcmvZXlPWfBNBRvrv6hjR22KOYiSdrY0SZvTxQBJMlQWmmxjmNDR0ecOT8jT3nGnlFbiWPTYurINMK9dGflm4H_zdJ_35UcKd5FwYbjYUYUVkEc5G_pJp">
+<span class="absolute bottom-0 right-0 bg-surface-bright text-on-surface text-[8px] font-label-sm px-1">REF</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Kabir Das</span>
+<span class="font-label-sm text-label-sm text-outline">(Age 12)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Concert attendee - Stage Bravo</span>
+<span class="font-label-sm text-label-sm text-outline">Filed: 14:28:10 (4m ago)</span>
+</div>
+</div>
+<div class="mt-space-sm p-space-xs bg-surface-container-high rounded-lg space-y-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Worn Attire:</span>
+<span class="text-on-surface truncate">Black hoodie, neon wristband</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Search Grid:</span>
+<span class="font-bold text-outline">Concert Main Lawn (24 cameras)</span>
+</div>
+</div>
+</div>
+<!-- Add Manual Report Direct Action -->
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary-fixed flex items-center justify-center gap-space-xs font-label-md text-label-md tracking-wider uppercase transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment_add</span>
+<span class="">Upload Missing Person Dossier</span>
+</button>
+</div>
+<!-- CENTER DISPLAY: Live Biometric Match & CCTV Feed Verification (5 cols on lg, 6 cols on xl) -->
+<div class="lg:col-span-8 xl:col-span-6 flex flex-col gap-space-md">
+<!-- Live Intercept Banner -->
+<div class="bg-surface-container-high p-space-md rounded-xl space-y-space-md shadow-xl">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-headline-md text-headline-md text-primary tracking-tight">ACTIVE VERIFICATION: CASE #MP-104</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[14px]">videocam</span>
+<span class="">CAM-072 [FOOD COURT NORTH GATE]</span>
+<span class="text-outline">|</span>
+<span class="text-secondary font-bold">LIVE - 14:32:08 (2m ago)</span>
+</div>
+</div>
+<!-- Dual Side-By-Side Reference vs CCTV Intercept with Biometric Wireframe HUD -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Reference Picture Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center justify-between text-outline px-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Target Reference Dossier</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">SOURCE: APP UPLOAD</span>
+</div>
+<div class="relative w-full h-72 rounded-lg overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="Close up sharp frontal family portrait of a 7-year-old child Aarav wearing a yellow cartoon graphic t-shirt against a plain room background, high resolution, clean natural illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKCuVF_Frzw_cX9NXVbla4_ZFCMKJOKz_L4H1CVp5NVG52hCMisjyhHilF_FKE1aCuhaaqCnFLPo1TZBZBZXzlqcB1Fc4XtYJNRsUpF1CpaAKX-NjucYl5uWl17irYBsukxG28k_fpiBAKpNGAPVAamMy2t_AKLwHcW2nS7C2h_wEC_fb9uDI74AWJn5HYgAZ6L6X8FHdrJwxciav8Cnr_ZYYNL6PsxmeCQq5w9sXSw8K3ys6bBaRL">
+<!-- Reference Biometric Mesh Overlay (SVG) -->
+<div class="absolute inset-0 pointer-events-none p-4 flex items-center justify-center">
+<svg class="w-full h-full text-primary-container/60" fill="none" stroke="currentColor" viewBox="0 0 200 240">
+<!-- Face oval & landmark grid -->
+<ellipse cx="100" cy="115" rx="55" ry="72" stroke-dasharray="3 3" stroke-width="1.5"></ellipse>
+<circle cx="82" cy="100" fill="currentColor" r="3"></circle>
+<circle cx="118" cy="100" fill="currentColor" r="3"></circle>
+<circle cx="100" cy="122" fill="currentColor" r="2.5"></circle>
+<line stroke-width="2" x1="88" x2="112" y1="145" y2="145"></line>
+<!-- Delaunay Triangulation vectors -->
+<path d="M82,100 L118,100 L100,122 Z M82,100 L100,122 L70,128 Z M118,100 L100,122 L130,128 Z M100,122 L88,145 L112,145 Z" opacity="0.7" stroke-width="0.8"></path>
+<!-- Target box crosshairs -->
+<path d="M40 30 H25 V45 M160 30 H175 V45 M40 210 H25 V195 M160 210 H175 V195" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface">
+                  ID: REF-VECTOR-4091
+                </div>
+<div class="absolute bottom-2 left-2 right-2 bg-surface-container-lowest/90 backdrop-blur-md p-1.5 rounded flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="">FACIAL ENCODING</span>
+<span class="text-secondary font-bold">512-DIM EXTRACTED</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs text-center font-label-sm text-label-sm pt-space-xs">
+<div class="bg-surface-container p-space-xs rounded">
+<span class="text-outline block">Age Projection</span>
+<span class="text-on-surface font-bold text-label-md">6.8 - 7.5 YRS</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded">
+<span class="text-outline block">Reported Height</span>
+<span class="text-on-surface font-bold text-label-md">118 CM</span>
+</div>
+</div>
+</div>
+<!-- CCTV Best Detection Match Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex flex-col gap-space-xs relative overflow-hidden ring-1 ring-primary-container">
+<div class="flex items-center justify-between text-outline px-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  AI CCTV INTERCEPT MATCH
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">CONFIRM 94.8%</span>
+</div>
+<div class="relative w-full h-72 rounded-lg overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="High-angle security surveillance CCTV camera angle of a busy outdoor festival crowd passage where a 7 year old child in a yellow t-shirt and blue shorts is standing near a food stall railing, slight motion blur in background, photorealistic security capture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD7C9fbp4zHvZ6Av88JoO-Ozm9tw8-_C9ehT5QSUXAiHjk4wtUbCY2J5xRaySPO665B2wVCNuTUyqLgtNafE_ge4jpB1PDptemgAewfKhMDipqeidJGBW3ejqtrNUCsut2zztRVB_7gKlFjXCyBBJNKXwNkaICdqhEP41BDxgujwRRWwraU8JxHWFdF5TcVpiAF9dngEg0GLtLM0Jfbh5VF4_whX0GhbksE9DjC58qVtSwQ45EIKo3">
+<!-- Bounding Box HUD and Tracking Overlay -->
+<div class="absolute inset-0 pointer-events-none"><div class="absolute top-[40%] left-[18%] w-[26%] h-[46%] border-2 border-primary-container shadow-[0_0_12px_rgba(0,240,255,0.4)]"><div class="absolute -top-6 left-0 bg-primary-container text-on-primary-container px-1.5 py-0.5 font-label-sm text-label-sm font-bold flex items-center gap-1 min-w-max"><span class="material-symbols-outlined text-[12px]">face</span><span class="">#TARGET-A9 // AARAV SHARMA (94.8%)</span></div><div class="w-2 h-2 border-t-2 border-l-2 border-white absolute top-0 left-0"></div><div class="w-2 h-2 border-t-2 border-r-2 border-white absolute top-0 right-0"></div><div class="w-2 h-2 border-b-2 border-l-2 border-white absolute bottom-0 left-0"></div><div class="w-2 h-2 border-b-2 border-r-2 border-white absolute bottom-0 right-0"></div><div class="absolute -bottom-5 left-0 right-0 bg-surface-container-lowest/90 px-1 py-0.5 flex items-center justify-between font-label-sm text-[9px] text-primary"><span class="">YELLOW TEE MATCH</span><span class="text-secondary font-bold">98.2%</span></div></div><svg class="absolute inset-0 w-full h-full" fill="none" viewBox="0 0 100 100"><circle cx="31" cy="63" opacity="0.6" r="16" stroke="#00f0ff" stroke-dasharray="2 2" stroke-width="0.8"></circle><line opacity="0.5" stroke="#00f0ff" stroke-dasharray="1 1" stroke-width="0.5" x1="31" x2="31" y1="43" y2="83"></line><line opacity="0.5" stroke="#00f0ff" stroke-dasharray="1 1" stroke-width="0.5" x1="11" x2="51" y1="63" y2="63"></line><path class="text-primary-container" d="M31 78 Q 37 84, 45 88" stroke="currentColor" stroke-dasharray="2 2" stroke-width="1.5"></path><polygon class="text-primary-container" fill="currentColor" points="45,88 39,85 43,82"></polygon></svg></div>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded font-label-sm text-label-sm text-primary-container font-mono">
+                  LATENCY: 84ms
+                </div>
+</div>
+<!-- Re-ID Feature Verification Confidence Breakdown -->
+<div class="grid grid-cols-2 gap-space-xs text-center font-label-sm text-label-sm pt-space-xs">
+<div class="bg-surface-container p-space-xs rounded">
+<span class="text-outline block">Facial Re-ID Metric</span>
+<div class="flex items-center justify-center gap-1 text-secondary font-bold text-label-md">
+<span class="">94.8%</span>
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-xs rounded">
+<span class="text-outline block">Upper Torso Chroma</span>
+<div class="flex items-center justify-center gap-1 text-secondary font-bold text-label-md">
+<span class="">98.2%</span>
+<span class="material-symbols-outlined text-[14px]">palette</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Chronological CCTV Feeds: Trajectory Prediction & Crowd Vectoring -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-headline-md text-body-lg text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">timeline</span>
+                Estimated Walking Trajectory &amp; CCTV Sequence
+              </span>
+<span class="font-label-sm text-label-sm text-secondary">PROJECTED HEADING: NORTH-EAST (SECTOR 3)</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<!-- Trajectory Frame 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-xs space-y-1">
+<div class="relative h-24 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="CCTV security view of a busy food court entry passage showing crowds with a yellow-shirted child entering frame left, wide angle security view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB1WaT70V5iQDGTOLissNlDMCxOmZ2J1I8YvyBCmfRsGHHkZv8Wp51G8k42_tzRVz33JdVnJ50SdpLCKzPKOm43hG-cTy1R7rsOcjlEfCGP8bNNskwBxsYKG8Z1rC05my7ee53HJQYQmkk4rmNlUIMGiixudcf4VRsVsxJyLR07ABvQJN1TJ6gPxwKLd5TJoW5_JhOyrVRQacXf3UzqkBluFSiIg_M4F9T7xXrwh2MNYRjIPEK0K8H">
+<span class="absolute top-1 left-1 bg-surface-container-lowest/80 text-outline text-[9px] font-label-sm px-1 rounded">CAM-068 (14:30:12)</span>
+<span class="absolute bottom-1 right-1 bg-surface-container/90 text-on-surface text-[9px] font-label-sm px-1 rounded">CONF: 81.2%</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-[10px] text-outline px-1">
+<span class="">Turnstile Gate 4</span>
+<span class="text-on-surface-variant font-mono">1.2 m/s flow</span>
+</div>
+</div>
+<!-- Trajectory Frame 2 (Current Frame) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-xs space-y-1 ring-1 ring-primary-container">
+<div class="relative h-24 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="CCTV camera focus on child in yellow shirt looking at a large landmark festival balloon near juice kiosk, surveillance monitor feed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOCSNrH-PIrVvNCPkY1FzOmv99MS1M7KyW2NtBar8s8lMAKbMx8TJ8FRD8_hSm_8AalElPXPComPYaXBTJ0KHg353RYYvjWRrdMCGYLcD70xry8NgOtDFzfaS925VPuAXvJKWCxTpbeYivWfUsxG5ulAM5vWbgEsbS6ydMZjI4d1EoMk2uogIfXr_JVwLxcOfSTsSV50BLyahFHgxJSsuhPYHrXtCkPVCJKcVjdpTwF1rlYi2qHiOx">
+<span class="absolute top-1 left-1 bg-primary-container text-on-primary-container font-bold text-[9px] font-label-sm px-1 rounded">CAM-072 (14:32:08)</span>
+<span class="absolute bottom-1 right-1 bg-primary text-on-primary text-[9px] font-label-sm px-1 rounded font-bold">MATCH (NOW)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-[10px] text-primary-container px-1 font-bold">
+<span class="">Food Court North</span>
+<span class="font-mono">STATIONARY</span>
+</div>
+</div>
+<!-- Trajectory Frame 3 (Projected Next Camera) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-xs space-y-1 opacity-75">
+<div class="relative h-24 rounded overflow-hidden bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-60" data-alt="Security CCTV camera feed overlooking open festival pathway towards Sector 3, high angle view, dense crowd flowing smoothly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb89lsKGKE452C_pa4nPa3IN9_zstBHYdSNeWArsU7bNhtkAWTNB_dWnJO2ceARRoQHuskK8PNVQf13nWfb7uf9JD7NSTplrvb_ewLygW-B0pLpQSB31ENXpY-X84YDQ5v52m_rqaUM-1XiYAC8Js3cQU9PzU9kq5BzwbLEr4l0QIcyzyxQYh9xGoHTRBmUkP2iz05vfZHYbV43XvA4SVv4klo_y7Js7YDVsa6EfLjZhhuVZg2rLTJ">
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-surface-container-lowest/50 text-center p-1">
+<span class="material-symbols-outlined text-primary-container text-[20px] animate-pulse">radar</span>
+<span class="font-label-sm text-[10px] text-on-surface uppercase tracking-wider font-bold">Awaiting Intercept</span>
+</div>
+<span class="absolute top-1 left-1 bg-surface-container-lowest/80 text-outline text-[9px] font-label-sm px-1 rounded">CAM-075 [PREDICTED]</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-[10px] text-outline px-1">
+<span class="">Sector 3 Concourse</span>
+<span class="text-secondary font-mono">ETA 90s</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Immediate Tactical Dispatch & Action Hub (LG: 12, XL: 3) -->
+<div class="lg:col-span-12 xl:col-span-3 flex flex-col gap-space-md">
+<!-- Nearest Field Marshal Alert Card -->
+<div class="bg-surface-container-high rounded-xl p-space-md space-y-space-sm shadow-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary-fixed uppercase tracking-wider font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Nearest Responding Unit
+            </span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">SECTOR 3</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container p-space-sm rounded-lg">
+<div class="w-12 h-12 rounded-full bg-surface-bright shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Headshot portrait of a uniformed tactical security marshal named Vikram Singh wearing radio headset, alert professional look, realistic photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnXSqNOrOcBozP8JRIh1RwLUsdILKvz7sm6FBX-TqRdvGS2PciYEU8BExD9SUbQTWVcjMoX5IXYlCZU0IGJBQBAVv9PT4UoawMckHvrXIr3qN0u2mCzdNkgAzvowVTMCLZxA1j0aQm_Ql5xkGhwtPsUfRS8zfMQ-sHAgVCeJdJ_h_beioGmkdJOHGFoFo-F8RtLUbcRKhZm854tqpMtNziUatzr4ZI9ODvdwAn60BHv7UtbcP7HpCV">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-body-lg text-on-surface font-bold truncate">Officer Vikram Singh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Unit: Mobile Patrol B-12</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold">35m away</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-bold">ETA 45s</span>
+</div>
+</div>
+</div>
+<!-- Quick Tactical Dispatch Triggers -->
+<div class="space-y-space-xs pt-space-xs">
+<button class="w-full bg-primary-container text-on-primary-container py-space-sm px-space-md rounded-lg font-label-md text-label-md uppercase font-bold flex items-center justify-center gap-space-xs shadow-md hover:brightness-110 transition-all" type="button"><span class="material-symbols-outlined text-[18px]">send</span><span class="">Dispatch Officer Vikram Now</span></button>
+<button class="w-full bg-surface-container hover:bg-surface-container-highest text-on-surface py-space-sm px-space-md rounded-lg font-label-md text-label-md uppercase font-semibold flex items-center justify-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]">sms</span>
+<span class="">Notify Mother (App Push + SMS)</span>
+</button>
+<button class="w-full bg-surface-container hover:bg-surface-container-highest text-on-surface py-space-sm px-space-md rounded-lg font-label-md text-label-md uppercase font-semibold flex items-center justify-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">cell_tower</span>
+<span class="">Broadcast to Sector 3 Radios</span>
+</button>
+<button class="w-full bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-outline py-space-xs px-space-md rounded-lg font-label-sm text-label-sm uppercase flex items-center justify-center gap-space-xs transition-colors mt-space-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+<span class="">False Positive / Reject Match</span>
+</button>
+</div>
+</div>
+<!-- Chain of Custody & Audit Log -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm flex-1">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Incident Timeline</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">ENCRYPTED</span>
+</div>
+<div class="space-y-space-sm font-label-sm text-label-sm">
+<div class="flex items-start gap-space-xs">
+<span class="text-primary-fixed-dim font-mono shrink-0">14:32:08</span>
+<p class="text-on-surface leading-tight">AI Vision Engine flag CAM-072 with 94.8% confidence match on Aarav Sharma.</p>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="text-outline font-mono shrink-0">14:26:40</span>
+<p class="text-on-surface-variant leading-tight">Neural search perimeter expanded to Sector 3 and Sector 4 Food Hubs.</p>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="text-outline font-mono shrink-0">14:15:02</span>
+<p class="text-on-surface-variant leading-tight">Family complaint registered with photo upload via Attendee App (Anita Sharma).</p>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="text-secondary font-mono shrink-0">13:58:22</span>
+<p class="text-on-surface-variant leading-tight">Case #MP-102 resolved: Child (4y) safely united at Help Booth 2.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Geographic Radar Mini-strip -->
+<div class="w-full bg-surface-container-low p-space-md rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">map</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-lg text-on-surface font-semibold">CCTV Sensor Node Grid &amp; Geo-Fencing Mesh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Real-time vector interpolation across 142 visual nodes | Auto-lock egress gates on positive confirmation</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="">Egress Turnstiles: NORMAL FLOW</span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider transition-colors" type="button">
+          View Tactical Map Layer
+        </button>
+</div>
+</div>
+</div>
+</div></main></div>
+
+
+
+</body></html>
